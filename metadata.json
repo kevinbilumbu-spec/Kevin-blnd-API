@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Gestion de Paie des Fonctionnaires",
+  "description": "Application complète de gestion de la paie pour l\u0027administration publique: gestion des agents, des salaires, suivi des réclamations, communication bancaire et édition des rapports administratifs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
