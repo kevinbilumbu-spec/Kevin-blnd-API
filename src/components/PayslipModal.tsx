@@ -1,6 +1,6 @@
 import React from 'react';
 import { Agent } from '../types';
-import { X, Printer, CreditCard, Award, ShieldCheck, Mail } from 'lucide-react';
+import { X, Printer, CreditCard, Award } from 'lucide-react';
 
 interface PayslipModalProps {
   agent: Agent;

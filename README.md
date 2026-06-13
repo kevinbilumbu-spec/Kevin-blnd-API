@@ -1,20 +1,44 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# PAIE-GOUV Dashboard
 
-# Run and deploy your AI Studio app
+Tableau de bord React + Vite pour la gestion de la paie, des agents, des réclamations et des rapports administratifs.
 
-This contains everything you need to run your app locally.
+## Description
 
-View your app in AI Studio: https://ai.studio/apps/36f066d6-2105-4d10-9894-24a314853525
+Cette application offre une interface de gestion RH pour les fonctionnaires, avec :
+- gestion des agents et des fiches de paie
+- simulation de cycles de paie
+- suivi des contentieux et réclamations
+- génération de rapports imprimables
+- export CSV / transmission bancaire simulée
 
-## Run Locally
+## Prérequis
 
-**Prerequisites:**  Node.js
+- Node.js (version compatible avec Vite)
+- npm ou un autre gestionnaire de packages compatible
 
+## Installation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Ouvrir un terminal dans le dossier du projet
+2. Installer les dépendances :
+
+```bash
+npm install
+```
+
+## Scripts utiles
+
+- `npm run dev` : démarre le serveur de développement Vite
+- `npm run build` : construit l'application pour la production
+- `npm run preview` : prévisualise le build de production
+- `npm run lint` : exécute `tsc --noEmit` pour vérifier la validité TypeScript
+
+## Structure principale
+
+- `src/App.tsx` : application principale avec navigation par onglets
+- `src/components/` : composants React pour agents, paie, réclamations, banque et rapports
+- `src/data/mockData.ts` : données initiales de démonstration
+- `src/types.ts` : types TypeScript partagés
+
+## Note
+
+L'environnement actuel de l'agent ne fournit pas `node`/`npm`, donc l'application n'a pas été construite ici. En local, utilisez les commandes ci-dessus pour vérifier et démarrer le projet.

@@ -7,23 +7,15 @@ import AgentList from './components/AgentList';
 import AgentForm from './components/AgentForm';
 import PayslipModal from './components/PayslipModal';
 import PayrollManager from './components/PayrollManager';
-import { ComplaintManager } from './components/ComplaintManager';
+import ComplaintManager from './components/ComplaintManager';
 import BankCommunicator from './components/BankCommunicator';
 import ReportGenerator from './components/ReportGenerator';
 
 import { 
   Users, 
   CreditCard, 
-  FileCheck2, 
   Landmark, 
   Files, 
-  Plus, 
-  TrendingUp, 
-  Briefcase, 
-  CheckCircle, 
-  ShieldCheck, 
-  Sparkles,
-  HelpCircle,
   AlertCircle
 } from 'lucide-react';
 
@@ -38,8 +30,6 @@ export default function App() {
     const local = localStorage.getItem('paie_complaints');
     return local ? JSON.parse(local) : INITIAL_COMPLAINTS;
   });
-
-  const [appTheme, setAppTheme] = useState<'light'>('light'); // default high-contrast state
 
   // Navigation: matches 5 required tasks
   const [activeTab, setActiveTab] = useState<'agents' | 'payroll' | 'complaints' | 'bank' | 'reports'>('agents');

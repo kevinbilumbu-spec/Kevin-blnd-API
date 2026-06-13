@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Agent, Complaint, ComplaintStatus } from '../types';
-import { ClipboardList, Plus, CheckCircle2, RotateCw, AlertTriangle, MessageSquare, Loader, Trash } from 'lucide-react';
+import { ClipboardList, Plus, CheckCircle2, RotateCw, AlertTriangle, MessageSquare, Trash } from 'lucide-react';
 
 interface ComplaintManagerProps {
   complaints: Complaint[];
@@ -342,4 +342,3 @@ export default function ComplaintManager({
     </div>
   );
 }
-export { ComplaintManager };

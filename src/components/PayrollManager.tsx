@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Agent } from '../types';
 import { MINISTE_LIST } from '../data/mockData';
-import { CreditCard, Landmark, CheckCircle2, RotateCw, Play, AlertCircle, Sparkles, Building2 } from 'lucide-react';
+import { CreditCard, Landmark, RotateCw, Play, AlertCircle } from 'lucide-react';
 
 interface PayrollManagerProps {
   agents: Agent[];

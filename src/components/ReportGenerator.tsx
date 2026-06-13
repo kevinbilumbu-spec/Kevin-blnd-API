@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Agent, Complaint, ReportRecipient } from '../types';
 import { MINISTE_LIST } from '../data/mockData';
-import { FileDown, Printer, FileText, Award, Building2, UserCheck, ShieldCheck, Mail } from 'lucide-react';
+import { Printer } from 'lucide-react';
 
 interface ReportGeneratorProps {
   agents: Agent[];
@@ -245,4 +245,3 @@ export default function ReportGenerator({ agents, complaints }: ReportGeneratorP
     </div>
   );
 }
-export { ReportGenerator };

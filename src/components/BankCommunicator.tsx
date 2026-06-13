@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Agent, BankConfig } from '../types';
+import { Agent } from '../types';
 import { BANQUES_LIST } from '../data/mockData';
-import { Landmark, FileSpreadsheet, Mail, ShieldCheck, Cpu, Code, RefreshCw, Send, CheckCircle, Smartphone } from 'lucide-react';
+import { FileSpreadsheet, Cpu, RefreshCw, Send, CheckCircle } from 'lucide-react';
 
 interface BankCommunicatorProps {
   agents: Agent[];
@@ -339,4 +339,3 @@ export default function BankCommunicator({ agents }: BankCommunicatorProps) {
     </div>
   );
 }
-export { BankCommunicator };
